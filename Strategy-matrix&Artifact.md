@@ -40,8 +40,8 @@ using artifact upload action to save `package.json` files
  - name: upload package.json to artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ matrix.microservice }}  # "name assigned to the uploaded files"
-        path: ./${{ matrix.microservice }}/package.json   #"path to the file you want to upload"
+        name: ${{ matrix.microservice }}                      # name assigned to the uploaded files
+        path: ./${{ matrix.microservice }}/package.json       # path to the file you want to upload
 ```
 in this case each `package.json` file is named after the microservice it belongs to
 
